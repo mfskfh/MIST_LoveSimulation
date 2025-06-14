@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미산고 연애 시뮬레이션</title>
+  <style>
+    /* 전체 페이지 설정 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      background-color: #fff;
+    }
+
+    /* 중앙 정렬 컨테이너 */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* 메인 타이틀 */
+    .start-title {
+      font-size: 150px;
+      color: pink;
+      text-align: center;
+    }
+
+    /* 강조 단어 */
+    .small-title {
+      font-size: 75px;
+      color: lightgray;
+    }
+
+    /* 시작 버튼 */
+    #start-button {
+      border: none;
+      background-color: pink;
+      color: white;
+      font-size: 100px;
+      padding: 20px;
+      width: 500px;
+      height: 200px;
+      margin-top: 50px;
+      cursor: pointer;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    #start-button:hover {
+      background-color: #f0f0f0;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="start-title">
+      미<span class="small-title">산고</span> 연<span class="small-title">애</span> 시<span class="small-title">뮬레이션</span>
+    </div>
+    <button id="start-button" onclick="location.href='chooseDate.html'">연애하기</button>
+  </div>
+</body>
+</html>

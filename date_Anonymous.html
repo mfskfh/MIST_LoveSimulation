@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>정헌수와의 데이트</title>
+  <style>
+    body { font-family: 'Arial'; margin: 50px; text-align: center; }
+    h1 { color: pink; font-size: 50px; font-weight: 700; }
+    .layout { display: flex; align-items: center; justify-content: center; gap: 40px; margin-bottom: 40px; }
+    .layout img { width: 300px; border: 2px solid lightgray; border-radius: 15px; }
+    .dialogue { font-size: 30px; color: pink; border: 2px solid lightgray; padding: 20px; min-height: 100px; border-radius: 15px;}
+    .options { margin-top: 20px; }
+    .button {
+      padding: 10px 20px;
+      font-size: 25px;
+      font-weight: 700;
+      border: none;
+      background-color: pink;
+      color: white;
+      cursor: pointer;
+      margin: 10px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>정헌소와의 데이트</h1>
+  <div class="layout">
+    <img src="image\Anonymous.jpeg" alt="정헌소">
+    <div class="dialogue" id="dialogueBox">우리 뭐하러 갈래?</div>
+  </div>
+
+  <div class="options" id="optionsBox">
+    <button class="button" onclick="choose('movie')">영화 보러 가자</button>
+    <button class="button" onclick="choose('cafe')">카페 가자</button>
+    <button class="button" onclick="choose('park')">산책하자</button>
+  </div>
+
+  <button class="button" onclick="location.href='chooseDate.html'">다시 선택하기</button>
+
+  <script>
+    function choose(option) {
+      const dialogueBox = document.getElementById('dialogueBox');
+      const optionsBox = document.getElementById('optionsBox');
+      
+      if (option === 'movie') {
+        dialogueBox.textContent = "................";
+      } else if (option === 'cafe') {
+        dialogueBox.textContent = "!!!!!!!!!!!!!!!!!";
+      } else if (option === 'park') {
+        dialogueBox.textContent = "??????????????????????????????";
+      }
+
+      optionsBox.style.display = 'none'; // 선택지 숨김
+    }
+  </script>
+</body>
+</html>

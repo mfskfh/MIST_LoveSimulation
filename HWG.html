@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>왕수오와의 데이트</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+    body {
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 75px;
+      margin: 0;
+      color: pink;
+    }
+    .layout {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin: 20px;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .layout img {
+      width: 320px;
+      max-width: 100%;
+      border: 3px solid lightgray;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .greeting {
+      border: 3px solid lightgray;
+      padding: 30px;
+      font-size: 26px;
+      color: pink;
+      width: 450px;
+      min-width: 280px;
+      border-radius: 10px;
+      background-color: #fafafa;
+      box-sizing: border-box;
+      text-align: left;
+    }
+    .buttons {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    button {
+      padding: 15px 40px;
+      font-size: 30px;
+      font-weight: 700;
+      border: none;
+      background-color: pink;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      min-width: 160px;
+      color: white;
+    }
+    button:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>왕수오와의 데이트</h1>
+    <div class="layout">
+      <img src="image\HWG.jpeg" alt="왕수오" />
+      <div class="greeting">
+        반가워 나는 왕수오<br />
+        나랑 재밌는 왕데이트를 하러 가자
+      </div>
+    </div>
+    <div class="buttons">
+      <button onclick="history.back()">뒤로가기</button>
+      <button onclick="location.href='date_wang.html'">데이트하러 가기</button>
+    </div>
+  </div>
+</body>
+</html>
