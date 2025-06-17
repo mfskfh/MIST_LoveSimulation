@@ -1,122 +1,68 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>데이트 선택</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>미산고 연애 시뮬레이션</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
+    /* 전체 페이지 설정 */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      font-family: 'Arial', sans-serif;
+      font-family: sans-serif;
       background-color: #fff;
     }
 
-    body {
+    /* 중앙 정렬 컨테이너 */
+    .container {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      padding: 40px;
+      align-items: center;
+      height: 100vh;
     }
 
-    .choose-title {
+    /* 메인 타이틀 */
+    .start-title {
+      font-size: 150px;
       color: pink;
-      font-size: 75px;
-      margin-bottom: 70px;
       text-align: center;
     }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      max-width: 1700px;
-      width: 100%;
+    /* 강조 단어 */
+    .small-title {
+      font-size: 75px;
+      color: lightgray;
     }
 
-    .card-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .card {
-      border: 3px solid lightgray;
-      width: 380px;             /* 카드 폭 살짝 줄임 */
-      height: 480px;            /* 높이 늘림 */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px;
-      font-size: 30px;
-      font-weight: 700;
-      color: pink;
-      border-radius: 15px;
-    }
-
-    .card img {
-      width: 100%;
-      height: 380px;            /* 이미지 높이 증가 */
-      object-fit: cover;
-      border: 3px solid lightgray;
-      border-radius: 15px;
-    }
-
-    .button {
-      padding: 10px 30px;
-      font-size: 20px;
-      background-color: pink;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
+    /* 시작 버튼 */
+    #start-button {
       border: none;
+      background-color: pink;
       color: white;
-      border-radius: 30px;
+      font-size: 100px;
+      padding: 20px;
+      width: 500px;
+      height: 200px;
+      margin-top: 50px;
+      cursor: pointer;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
     }
 
-    .button:hover {
+    #start-button:hover {
       background-color: #f0f0f0;
+      
     }
   </style>
 </head>
 <body>
-  <h1 class="choose-title">누구랑 데이트 하고싶어?</h1>
   <div class="container">
-    <div class="card-wrapper">
-      <div class="card">
-        감만재<br>
-        <img src="image/KMJ.jpeg" alt="감만재" onmouseover="this.src='image/KMJ_OnMouse.jpeg'" onmouseout="this.src='image/KMJ.jpeg'" onclick="location.href='KMJ.html'"/>
-      </div>
-      <button class="button" onclick="location.href='KMJ.html'">선택</button>
+    <div class="start-title">
+      미<span class="small-title">산고</span> 연<span class="small-title">애</span> 시<span class="small-title">뮬레이션</span>
     </div>
-    <div class="card-wrapper">
-      <div class="card">
-        왕수오<br>
-        <img src="image/HWG.jpeg" alt="왕수오" onmouseover="this.src='image/HWG_OnMouse.jpeg'" onmouseout="this.src='image/HWG.jpeg'" onclick="location.href='HWG.html'"/>
-      </div>
-      <button class="button" onclick="location.href='HWG.html'">선택</button>
-    </div>
-    <div class="card-wrapper">
-      <div class="card">
-        육수현<br>
-        <img src="image/HOG.jpeg" alt="육수현" onmouseover="this.src='image/HOG_OnMouse.jpeg'" onmouseout="this.src='image/HOG.jpeg'" onclick="location.href='HOG.html'"/>
-      </div>
-      <button class="button" onclick="location.href='HOG.html'">선택</button>
-    </div>
-    <div class="card-wrapper">
-      <div class="card">
-        정헌소<br>
-        <img src="image/Anonymous.jpeg" alt="정헌소" onmouseover="this.src='image/Anonymous_OnMouse.jpeg'" onmouseout="this.src='image/Anonymous.jpeg'" onclick="location.href='Anonymous.html'"/>
-      </div>
-      <button class="button" onclick="location.href='Anonymous.html'">선택</button>
-    </div>
+    <button id="start-button" onclick="location.href='chooseDate.html'">연애하기</button>
   </div>
 </body>
 </html>
